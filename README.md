@@ -1,5 +1,29 @@
 # Lloyds Clone
 
+A clone of the Lloyds banking app built with Expo — runs on iOS, Android, and **web**.
+
+## Quick Start (Web)
+
+```sh
+# 1. Copy the env file and set your API URL
+cp .env.example .env
+
+# 2. Install deps + launch in browser (one command)
+./launch.sh
+```
+
+Or manually:
+```sh
+pnpm install
+pnpm web          # dev server → http://localhost:8081
+pnpm build:web    # production build → dist/
+```
+
+> **Requires the API server** → [Lloyds API Clone](https://github.com/amilmohd155/lloyds-clone-api)  
+> Set `EXPO_PUBLIC_API_URL` in `.env` to point at it (default: `http://localhost:1205`)
+
+---
+
 This project is a clone of the Lloyds banking application, built using React Native and TypeScript. It includes various features such as authentication, creating a new payee, viewing account details, and making payments.
 
 ## Screenshots
