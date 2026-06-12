@@ -4,6 +4,20 @@ A clone of the Lloyds banking app built with Expo — runs on iOS, Android, and 
 
 ## Quick Start (Web)
 
+### Deploy to Netlify (recommended)
+
+1. Push this repo to GitHub
+2. Go to [app.netlify.com](https://app.netlify.com) → **Add new site** → **Import an existing project**
+3. Pick your GitHub repo
+4. Build settings are auto-detected from `netlify.toml` — no changes needed
+5. Go to **Site configuration → Environment variables** and add:
+   ```
+   EXPO_PUBLIC_API_URL = https://your-api-url.com
+   ```
+6. Click **Deploy site** — done, live URL provided instantly
+
+### Run locally
+
 ```sh
 # 1. Copy the env file and set your API URL
 cp .env.example .env
@@ -20,7 +34,7 @@ pnpm build:web    # production build → dist/
 ```
 
 > **Requires the API server** → [Lloyds API Clone](https://github.com/amilmohd155/lloyds-clone-api)  
-> Set `EXPO_PUBLIC_API_URL` in `.env` to point at it (default: `http://localhost:1205`)
+> Set `EXPO_PUBLIC_API_URL` to point at it (default: `http://localhost:1205`)
 
 ---
 
