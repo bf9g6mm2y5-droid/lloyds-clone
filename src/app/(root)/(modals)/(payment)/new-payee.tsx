@@ -4,10 +4,8 @@ import { InlineLabelTextInput } from "@/components/ui";
 import { PayeeQueryKey } from "@/libs/query-keys";
 import { sortCodeFormatter } from "@/libs/utils";
 import { CreatePayeeForm, createPayeeFormSchema } from "@/schema";
-import { LoadingScreen } from "@/screens/LoadingScreen";
 import { useLoadingScreen, usePaymentActions } from "@/store";
 import { AntDesign, Ionicons } from "@expo/vector-icons";
-import { Portal } from "@gorhom/portal";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import Checkbox from "expo-checkbox";
@@ -17,7 +15,6 @@ import { Controller, useForm } from "react-hook-form";
 import { Pressable, Text, View } from "react-native";
 import Animated, { SlideInUp, SlideOutUp } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { FullWindowOverlay } from "react-native-screens";
 
 export default function Page() {
   const { bottom } = useSafeAreaInsets();
