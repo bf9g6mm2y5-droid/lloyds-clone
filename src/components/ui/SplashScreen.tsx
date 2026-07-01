@@ -31,7 +31,7 @@ export const SplashScreen = ({ imageUri }: { imageUri: string }) => {
   return (
     <View className="flex-1">
       {error && <Redirect href="/error" />}
-      {isAppReady &&
+      {!error && isAppReady &&
         (authenticated ? (
           status === "success" && <Redirect href="/(root)/(tabs)" />
         ) : (

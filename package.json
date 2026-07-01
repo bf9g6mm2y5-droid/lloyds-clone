@@ -53,6 +53,7 @@
     "react-hook-form": "^7.54.2",
     "react-native": "0.76.6",
     "react-native-collapsible-tab-view": "^8.0.0",
+    "react-native-tab-view": "^4.0.5",
     "react-native-gesture-handler": "~2.20.2",
     "react-native-pager-view": "6.5.1",
     "react-native-reanimated": "~3.16.4",

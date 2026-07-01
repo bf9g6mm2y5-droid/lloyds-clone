@@ -2,12 +2,11 @@ import { useAccountQuery } from "@/hooks";
 
 import LoadingOverlay from "@/screens/LoadingOverlay";
 import { Octicons } from "@expo/vector-icons";
-import { Link, useLocalSearchParams, useRouter } from "expo-router";
+import { Link, useLocalSearchParams } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 
 const Page = () => {
   const { accountId } = useLocalSearchParams<{ accountId: string }>();
-  const router = useRouter();
 
   const { data, isPending, isError } = useAccountQuery(accountId);
 
@@ -38,7 +37,6 @@ const Page = () => {
           asChild
         >
           <Pressable
-            onPress={() => router.dismiss()}
             className="flex-row items-center gap-x-3"
           >
             <Octicons name="share" size={20} color="#000000" />
@@ -60,7 +58,7 @@ const Page = () => {
           <Octicons name="chevron-right" size={24} color="#000000" />
         </Pressable>
         <Pressable className="flex-row items-center justify-between gap-x-2 border-b border-b-gray-200 px-3 py-4 active:bg-black/10">
-          <Text>Sending or recieving money outside the UK</Text>
+          <Text>Sending or receiving money outside the UK</Text>
           <Octicons name="chevron-right" size={24} color="#000000" />
         </Pressable>
         <Pressable className="flex-row items-center justify-between gap-x-2 border-b border-b-gray-200 px-3 py-4 active:bg-black/10">

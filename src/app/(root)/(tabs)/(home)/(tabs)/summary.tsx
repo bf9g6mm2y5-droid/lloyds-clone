@@ -29,8 +29,8 @@ const SummaryScreen = () => {
 
       {/* Credit Score Checker Banner */}
       <AdvertBanner
-        title="Check your credit scrore"
-        description="Congratulations - you've been registerd for Your Credit Score for a year"
+        title="Check your credit score"
+        description="Congratulations - you've been registered for Your Credit Score for a year"
         icon={require("@assets/images/icon.png")}
         action="Check your Score"
       />

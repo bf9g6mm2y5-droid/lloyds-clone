@@ -31,8 +31,8 @@ const EverydayScreen = () => {
       <OtherAccountCard />
 
       <AdvertBanner
-        title="Check your credit scrore"
-        description="Congratulations - you've been registerd for Your Credit Score for a year"
+        title="Check your credit score"
+        description="Congratulations - you've been registered for Your Credit Score for a year"
         icon={require("@assets/images/icon.png")}
         action="Check your Score"
       />
@@ -87,7 +87,7 @@ const EverydayScreen = () => {
       {/* Benefits */}
       <AdvertBanner
         title="Benefits to lighten the load"
-        description={`£23 billion of government support is unclaimed each year. \nUse our benifits calculator to check if you're missing out.`}
+        description={`£23 billion of government support is unclaimed each year. \nUse our benefits calculator to check if you're missing out.`}
         icon={require("@assets/images/icon.png")}
         action="Check your eligibility"
         className="bg-white"
@@ -95,7 +95,7 @@ const EverydayScreen = () => {
 
       {/* Share feedback */}
       <Text className="mt-5 text-center text-sm">
-        Like the new Everday space?
+        Like the new Everyday space?
       </Text>
       <Pressable className="items-center rounded-xl bg-black py-5">
         <Text className="font-bold text-white">Share feedback</Text>

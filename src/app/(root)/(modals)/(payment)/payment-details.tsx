@@ -55,11 +55,12 @@ export default function Page() {
   });
 
   const onSubmit: SubmitHandler<CreateTransactionForm> = (data) => {
+    if (!account || !payee) return;
     mutate.mutate({
-      amount: -data.amount, // Negative amount for outgoing transaction
+      amount: -data.amount,
       ref: data.ref,
-      accountId: account?.id,
-      accountName: payee?.name,
+      accountId: account.id,
+      accountName: payee.name,
     });
   };
 

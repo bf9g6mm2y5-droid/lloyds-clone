@@ -7,7 +7,7 @@ export async function getTransactionMonthlySummary(
   year: number,
   month: number,
 ) {
-  const response = await privateClient()
+  const response = await privateClient
     .get(`/transaction/${accountId}/${year}/${month}/`)
     .then((res) => {
       return validateSchema({

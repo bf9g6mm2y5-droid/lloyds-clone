@@ -7,7 +7,7 @@ import { useMemo } from "react";
 export default function HomeLayout() {
   const query = useUserQuery();
   const fullName = query.data?.fullName ?? "User";
-  const greetings = useMemo(getGreetings, [fullName]);
+  const greetings = useMemo(getGreetings, []);
 
   const glob = useGlobalSearchParams<{ id: string; name: string }>();
 

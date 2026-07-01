@@ -8,7 +8,7 @@ import { transactionSchema } from "@/schema";
 //   cursor: string,
 //   limit: number,
 // ) {
-//   const response = await privateClient()
+//   const response = await privateClient
 //     .get(`transaction/${accountId}`, {
 //       params: {
 //         cursor,
@@ -36,7 +36,7 @@ export async function createTransaction({
   amount: number;
   ref?: string;
 }) {
-  return privateClient()
+  return privateClient
     .post(`transactions`, {
       accountId,
       accountName,

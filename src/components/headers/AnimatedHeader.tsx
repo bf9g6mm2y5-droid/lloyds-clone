@@ -49,7 +49,7 @@ const AnimatedHeader = ({
     );
 
     return {
-      transform: [{ translateY: `${translateY}%` }],
+      transform: [{ translateY }],
       opacity,
     };
   }, [threshold, scrollOffset]);

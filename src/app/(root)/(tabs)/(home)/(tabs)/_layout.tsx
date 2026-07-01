@@ -26,7 +26,7 @@ export default function TopTabsLayout() {
       <TopTabs.Screen
         name="index"
         options={{
-          title: "Everday",
+          title: "Everyday",
         }}
       />
       <TopTabs.Screen

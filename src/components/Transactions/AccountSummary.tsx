@@ -46,7 +46,7 @@ const AccountSummary = ({
           </Pressable>
         </Link>
 
-        <Link asChild href={`/details/${id}?title=${accountName}`}>
+        <Link asChild href={`/(root)/(modals)/details/${id}?title=${accountName}`}>
           <Pressable className="items-center gap-y-3 rounded-lg p-2 active:bg-black/10">
             <FontAwesome6 name="building-columns" size={20} color="black" />
             <Text className="text-sm">Account details</Text>

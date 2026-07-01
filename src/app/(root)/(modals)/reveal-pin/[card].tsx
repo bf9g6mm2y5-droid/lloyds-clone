@@ -33,7 +33,7 @@ export default function ViewPINModal() {
           timeout: String(true),
         },
       });
-    }, 10000); // times out after 1 second
+    }, 10000); // times out after 10 seconds
 
     return () => clearTimeout(timeoutId);
   }, [router]);

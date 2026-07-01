@@ -1,6 +1,6 @@
 import { AccountSummary } from "@/components/Transactions";
 import { AnimatedHeader } from "@/components/headers";
-import { useAccountQuery, useAnimatedAccountScreen, useTransactions } from "@/hooks";
+import { useAccountQuery } from "@/hooks";
 import { useLoadingScreen } from "@/store";
 import { Stack, useLocalSearchParams } from "expo-router";
 import { useEffect, useState } from "react";

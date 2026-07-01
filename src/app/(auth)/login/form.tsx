@@ -30,7 +30,7 @@ const Page = () => {
       <View className="px-3">
         <View className="flex-row items-center gap-x-3 rounded-lg bg-green-200 p-3">
           <Ionicons name="lock-closed-outline" size={20} color="black" />
-          <Text className="text-sm">Plese enter your logon details</Text>
+          <Text className="text-sm">Please enter your logon details</Text>
         </View>
         <View className="mt-5 gap-y-3">
           <TextInput

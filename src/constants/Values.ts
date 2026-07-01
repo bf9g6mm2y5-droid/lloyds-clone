@@ -7,7 +7,7 @@ export const Spaces: {
   image: string;
 }[] = [
   {
-    title: "Everday",
+    title: "Everyday",
     description: "Stay on top of your finances with our tools and insights",
     link: "/(root)/(tabs)",
     image: "",
@@ -15,19 +15,19 @@ export const Spaces: {
   {
     title: "Save & Invest",
     description: "Build your financial future and track your growth",
-    link: "/save-invest",
+    link: "/coming-soon",
     image: "",
   },
   {
     title: "Borrow",
     description: "Check your credit score and see your borrowing options",
-    link: "/borrow",
+    link: "/coming-soon",
     image: "",
   },
   {
     title: "Insure",
     description: "View your cover and explore your options all in one place",
-    link: "/insure",
+    link: "/coming-soon",
     image: "",
   },
 ];

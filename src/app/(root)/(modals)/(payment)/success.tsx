@@ -18,12 +18,12 @@ export default function Page() {
         <Text className="font-semibold">{`${transaction?.amount}`}</Text> to{" "}
         <Text className="font-semibold">{`${transaction?.payeeName}`}</Text> has
         been sent.
-        {(payee?.newEntry || true) && "The payee details have been saved."}
+        {payee?.newEntry && "The payee details have been saved."}
       </Text>
       <View className="flex-row items-center gap-x-2 rounded-xl bg-gray-100 px-4 py-5">
         <Ionicons name="time-outline" size={20} color="black" />
         <Text className="text-sm">
-          This payment should be recieved within two hours.
+          This payment should be received within two hours.
         </Text>
       </View>
       <View className="flex-1" />

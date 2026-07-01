@@ -34,7 +34,7 @@ export default function TabLayout() {
 
       setEnable(true);
 
-      if (!accountsQuery.isPending && !accountsQuery.isError) {
+      if (!accountsQuery.isPending && !accountsQuery.isError && accountsQuery.data?.length > 0) {
         setAccount(accountsQuery.data[0]);
       }
 
@@ -88,7 +88,7 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="(payment)/index"
+        name="(payment)"
         options={{
           title: "Payment",
           tabBarIcon: ({ color }) => (
@@ -105,7 +105,7 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="(search)/index"
+        name="(search)"
         options={{
           title: "Search",
           tabBarIcon: ({ color }) => (

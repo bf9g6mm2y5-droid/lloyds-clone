@@ -92,7 +92,7 @@ const Header = ({
 
       {/* <View className="flex-1" /> */}
       <View className="flex-row gap-x-5">
-        {(!showClose || !showSupport || !showUser || !showCall) && (
+        {(!showClose && !showSupport && !showUser && !showCall) && (
           <View className="w-6" />
         )}
 

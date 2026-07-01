@@ -3,7 +3,6 @@ import {
   sampleTransactionTimeline,
 } from "@/constants";
 import { TransactionSection, TransactionType } from "@/types";
-import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import { useMemo, useState } from "react";
 
 const useTransactions = (accountId: string) => {

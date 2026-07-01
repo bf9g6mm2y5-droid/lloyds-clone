@@ -3,14 +3,14 @@ import { Image } from "expo-image";
 import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
-export default function CommingSoonPage() {
+export default function ComingSoonPage() {
   return (
     <View className="flex-1 items-center justify-center gap-y-5 bg-white">
       <Image
         source={require("@assets/images/logo.png")}
         style={{ width: 100, height: 100, aspectRatio: 1, marginBottom: 10 }}
       />
-      <CommingSoonText />
+      <ComingSoonText />
       <Text className="text-center italic">
         This is a demo app, there are some features yet to be implemented
       </Text>
@@ -27,7 +27,7 @@ export default function CommingSoonPage() {
   );
 }
 
-const CommingSoonText = () => {
+const ComingSoonText = () => {
   return (
     <View style={{ width: "100%", height: 150, alignItems: "center", justifyContent: "center" }}>
       <Text
@@ -41,7 +41,7 @@ const CommingSoonText = () => {
           WebkitTextFillColor: "transparent",
         } as any}
       >
-        Comming Soon
+        Coming Soon
       </Text>
     </View>
   );

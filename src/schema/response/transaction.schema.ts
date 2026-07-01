@@ -11,7 +11,7 @@ export type GetTransactionTimeline = z.infer<
 export const getTransactionMonthlySummarySchema = z.object({
   summary: z.object({
     incoming: z.number().positive(),
-    outgoing: z.number().negative(),
+    outgoing: z.number().nonpositive(),
   }),
 });
 

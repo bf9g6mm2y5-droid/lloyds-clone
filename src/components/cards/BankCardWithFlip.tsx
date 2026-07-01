@@ -133,7 +133,7 @@ const LCBankCardWithFlip = ({
                   <Text className="text-sm text-gray-800">CVV</Text>
                   <View className="flex-row gap-x-5">
                     <Text>000</Text>
-                    <Pressable onPress={handleCopyCardNumber}>
+                    <Pressable onPress={handleCopyCVV}>
                       <Feather name="copy" size={20} color="black" />
                     </Pressable>
                   </View>

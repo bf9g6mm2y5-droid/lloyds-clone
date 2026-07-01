@@ -2,10 +2,11 @@ import { View, StyleSheet, Text } from "react-native";
 import { Image } from "expo-image";
 import { Button } from "@/components/ui";
 import { formatCurrency } from "@/libs/utils";
-import { useTransaction } from "@/store";
+import { usePaymentAccount, useTransaction } from "@/store";
 
 export default function Page() {
   const transaction = useTransaction();
+  const account = usePaymentAccount();
 
   return (
     <View className="flex-1 px-4 py-8 pb-10">
@@ -20,7 +21,7 @@ export default function Page() {
       <View className="gap-y-6 rounded-xl bg-white px-4 py-10">
         <View className="flex-row items-baseline gap-x-2">
           <Text className="w-1/4 text-sm font-light">From:</Text>
-          <Text className="w-3/4 font-semibold">{}</Text>
+          <Text className="w-3/4 font-semibold">{account?.accountName}</Text>
         </View>
         <View className="flex-row items-baseline gap-x-2">
           <Text className="w-1/4 text-sm font-light">To:</Text>
@@ -35,7 +36,7 @@ export default function Page() {
         </View>
         <View className="flex-row items-baseline gap-x-2">
           <Text className="w-1/4 text-sm font-light">Amount:</Text>
-          <Text className="w-3/4 font-semibold">{formatCurrency(63.5)}</Text>
+          <Text className="w-3/4 font-semibold">{formatCurrency(Math.abs(transaction?.amount ?? 0))}</Text>
         </View>
         <View className="flex-row items-baseline gap-x-2">
           <Text className="w-1/4 text-sm font-light">On:</Text>

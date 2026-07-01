@@ -3,7 +3,7 @@ import privateClient from "@/api/privateClient";
 import { getCurrentUserSchema } from "@/schema";
 
 export async function getCurrentUser() {
-  const response = await privateClient()
+  const response = await privateClient
     .get("/users/me")
     .then((res) => {
       return validateSchema({

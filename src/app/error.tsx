@@ -9,7 +9,7 @@ export default function Page() {
 
   return (
     <View className="flex-1 items-center justify-center bg-red-700">
-      <Text className="ext-center text-7xl font-black uppercase text-white">
+      <Text className="text-center text-7xl font-black uppercase text-white">
         Error
       </Text>
       <Text className="mb-10 font-semibold text-gray-200">

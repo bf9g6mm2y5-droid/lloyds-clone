@@ -15,7 +15,7 @@ export async function getPayees(
     params.append("name", name);
   }
 
-  const response = await privateClient()
+  const response = await privateClient
     .get(`users/payee?${params}`)
     .then((res) =>
       validateSchema({
@@ -31,7 +31,7 @@ export async function getPayees(
 }
 
 export async function createPayee(input: CreatePayeeForm) {
-  const response = await privateClient()
+  const response = await privateClient
     .patch("users/payee", input)
     .then((res) =>
       validateSchema({
@@ -47,5 +47,5 @@ export async function createPayee(input: CreatePayeeForm) {
 }
 
 export async function deletePayee(id: string) {
-  const response = await privateClient().delete(`users/payee/${id}`);
+  const response = await privateClient.delete(`users/payee/${id}`);
 }

@@ -3,7 +3,7 @@ import { validateSchema } from "@/libs/validator";
 import { getAccountSchema, getAllAccountSchema } from "@/schema";
 
 export async function GetAllAccount() {
-  const response = await privateClient()
+  const response = await privateClient
     .get("/account")
     .then((res) =>
       validateSchema({
@@ -18,7 +18,7 @@ export async function GetAllAccount() {
 }
 
 export async function GetAccount(accountId: string) {
-  const response = await privateClient()
+  const response = await privateClient
     .get(`/account/${accountId}`)
     .then((res) =>
       validateSchema({

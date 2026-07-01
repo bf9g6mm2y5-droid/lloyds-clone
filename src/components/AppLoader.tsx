@@ -6,7 +6,7 @@ import { useAssets } from "expo-asset";
 
 export default function AppLoader() {
   const [loaded, fontError] = useFonts({
-    SpaceMono: require("../../assets/fonts/SpaceMono-Regular.ttf"),
+    SpaceMono: require("@assets/fonts/SpaceMono-Regular.ttf"),
     ...FontAwesome.font,
   });
 

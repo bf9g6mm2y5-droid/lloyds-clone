@@ -3,7 +3,7 @@ import privateClient from "../privateClient";
 import { getTransactionTimelineSchema } from "@/schema";
 
 export async function GetTransactionTimeline(accountId: string) {
-  const response = await privateClient()
+  const response = await privateClient
     .get(`transaction/timeline/${accountId}`)
     .then((res) => {
       return validateSchema({
